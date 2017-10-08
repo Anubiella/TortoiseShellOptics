@@ -1,0 +1,43 @@
+/*GENERAL PAGE SETUP*/
+html{
+	font-size: 18px;
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1.4;
+}
+.container{
+	max-width: 960px;
+	margin: 0 auto;
+}
+/*HEADER SECTION*/
+header{
+	background-image: url('../images/glasses-bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 31rem;
+	padding-top: 1rem;
+	color: white;
+}
+header nav{
+	background-color: cadetblue;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+}
+header nav img{
+	height: 1.5rem;
+	margin-right: 1rem;
+}
+header .upperlogo{
+	display: flex;
+	align-items: center;
+}
+header .uppernav{
+	display: flex
+	align-items: center;
+}
+header .uppernav ul li{
+	display: inline-block;
+	margin-left: 2rem;
+}
