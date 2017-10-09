@@ -8,9 +8,6 @@ html{
 	max-width: 960px;
 	margin: 0 auto;
 }
-/*div{
-	border: 1px solid black;
-}
 /*HEADER SECTION*/
 header{
 	background-image: url('../images/glasses-bg.png');
@@ -39,6 +36,9 @@ header .upperlogo{
 header .uppernav{
 	display: flex;
 	align-items: center;
+}
+#hiddenmenu{
+	display: none; 
 }
 header .uppernav ul li{
 	display: inline-block;
@@ -118,4 +118,80 @@ header .bannerflex{
 .footerlogo img{
 	height: 1.5rem;
 	margin-right: 1rem;
+}
+/*TABLET SCREEN ADAPT*/
+@media only screen and (max-width: 1050px){
+	
+	header{
+		padding-top: 0;
+		height: 22rem;
+	}
+	header .bannercont{
+		margin-right: 2rem;
+		margin-top: 5rem;
+		padding: 0.75rem 4rem;
+		font-size: 1.33rem;
+	}
+}
+/*PHONE SCREEN ADAPT*/
+@media only screen and (max-width: 670px){
+
+	header{
+		padding-top: 0;
+		height: 17rem;
+		background-position: 22%;
+	}
+	header .bannercont{
+		margin: 9rem 0 0 0;
+		padding: 1rem 1rem;
+		font-size: 1rem;
+		text-align: center;
+		width: 100%;
+	}
+	#showmenu{
+		display: none;
+	}
+	#hiddenmenu{
+		display: inline-block;
+	}
+	#logotext{
+		display: none;
+	}
+	.icons{
+		margin-top: 3.77rem;
+		margin-bottom: 3.77rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.icons .product span{
+		font-size: 0.77rem;
+	}
+	.icons .product{
+		margin-top: 1.54rem;
+	}
+	.descriptions{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.desc{
+		width: 100%;
+		margin-bottom: 4rem;
+	}
+	.desc span{
+		width: 100%;
+		text-align: center;
+	}
+	.desc p{
+		font-size: 0.77rem;
+		margin-top: 1rem;
+		padding-left: 1rem;
+	}
+	footer .footerlogo span{
+		display: none;
+	}
+	.footerlogo{
+		justify-content: center;
+	}
 }
