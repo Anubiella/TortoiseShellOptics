@@ -8,6 +8,9 @@ html{
 	max-width: 960px;
 	margin: 0 auto;
 }
+div{
+	border: 1px solid black;
+}
 /*HEADER SECTION*/
 header{
 	background-image: url('../images/glasses-bg.png');
@@ -83,4 +86,25 @@ header .bannerflex{
 }
 .product span{
 	display: block;
+}
+/*DESCRIPTIONS SECTION*/
+.descriptions{
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	margin-bottom: 5rem;
+}
+.desc{
+	width: 35%;
+	margin-right: 5%; 
+}
+.desc span{
+	display: block;
+	font-weight: bold;
+	color: white;
+	width: 10rem;
+	background-color: cadetblue;
+	margin-bottom: 1rem;
+	padding: 0.5rem 1.25rem;
+	text-align: left;
 }
